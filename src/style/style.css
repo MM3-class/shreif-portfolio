@@ -287,9 +287,3 @@ html {
         flex-direction: column;
     }
 }
-@media screen and (min-width: 0) {
-        .projects .project-img {
-        width: 400px;
-        margin: 0 auto;
-    }
-}
