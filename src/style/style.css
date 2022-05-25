@@ -240,6 +240,7 @@ html {
 @media screen and (max-width: 768px) {
     #container {
         overflow-x: hidden;
+        font-family: 'Roboto', sans-serif;
     }
     html {
         font-size: calc(60% + 0.8vmin);
@@ -279,6 +280,13 @@ html {
     .projects .project-img {
         width: 90%;
         margin: 0 auto;
+    }
+    #projectsContainer .info-content {
+        font-weight: 100;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.7);
+        width: 90%;
+        line-height: 32px;
     }
     #foot {
         padding: 32px 0;
