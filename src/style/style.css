@@ -12,7 +12,7 @@ html {
 #container {
     background-color: rgba(32, 32, 32, 1);
     width: 100%;
-    font-family: 'Macondo', cursive;
+    font-family: 'Roboto', sans-serif;
     /* max-width: 1550px; */
     /* margin: auto; */
 }
@@ -60,6 +60,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+    padding-top: 40px ;
 }
 .presentation {
     padding: 0 90px;
@@ -68,6 +69,7 @@ html {
     width: 100%;
     font-size: 4rem;
     color: rgba(222, 222, 222, 1);
+    padding-top: 40px;
 }
 .about-title {
     color: rgba(149, 149, 149, 1);
@@ -117,6 +119,7 @@ html {
     color: rgba(222, 222, 222, 1);
     margin-bottom: 42px;
     text-align: center;
+    padding-top: 60px;
 }
 .projects {
     display: flex;
@@ -193,7 +196,7 @@ html {
     text-align: center;
     margin: 50px 50px 0 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #foot > div {
     margin: 32px 0;
@@ -218,7 +221,8 @@ html {
     color: #0077b5;
 }
 /* CONTACT-ME END */
-@media screen and (min-width: 769px) and (max-width: 1279px){
+
+@media screen and (min-width: 769px) and (max-width: 1280px){
     .projects .project-img {
         width: 500px;
         margin: 0 auto;
@@ -226,6 +230,7 @@ html {
     #about-me {
         grid-template-columns: 1fr;
         grid-template-areas: "photo" "header";
+        height: auto;
     }
     .my-img {
         grid-area: photo;
@@ -236,11 +241,13 @@ html {
         text-align: center;
         grid-area: header;
     }
+    #foot {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 768px) {
     #container {
         overflow-x: hidden;
-        font-family: 'Roboto', sans-serif;
     }
     html {
         font-size: calc(60% + 0.8vmin);
@@ -250,8 +257,10 @@ html {
         margin: 0;
     }
     #about-me {
+        place-items: center;
         grid-template-columns: 1fr;
         grid-template-areas: "photo" "header";
+        height: auto;
     }
     .presentation {
         padding: 12px;
