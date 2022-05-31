@@ -44,6 +44,7 @@ html {
 .link a {
     color: rgba(222, 222, 222, 1);
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 .link a:hover {
     color: #fff;
@@ -67,12 +68,14 @@ html {
 }
 .presentation .about-header{
     width: 100%;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: rgba(222, 222, 222, 1);
     padding-top: 40px;
+    font-style:oblique;
 }
 .about-title {
     color: rgba(149, 149, 149, 1);
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 36px;
@@ -161,6 +164,7 @@ html {
     font-weight: 100;
     line-height: 42px;
     letter-spacing: -1.5px;
+    font-family: 'Poppins', sans-serif;
 }
 .project-info .info-header {
     font-weight: 900;
@@ -203,6 +207,8 @@ html {
 }
 #foot h3 {
     padding-bottom: 15px;
+    user-select: none;
+
 }
 #foot a {
     text-decoration: none;
@@ -213,6 +219,7 @@ html {
 }
 #foot .social-links .fa-brands {
     font-size: 1.5rem;
+    padding: 0 5px;
 }
 .fa-github {
     color: #6e5494;
@@ -240,6 +247,10 @@ html {
         padding: 12px;
         text-align: center;
         grid-area: header;
+    }
+    #projectsContainer .info-content {
+        line-height: 32px;
+        font-size: 1.2rem;
     }
     #foot {
         margin: 0;
@@ -295,7 +306,7 @@ html {
         font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.7);
         width: 90%;
-        line-height: 32px;
+        line-height: 22px;
     }
     #foot {
         padding: 32px 0;
